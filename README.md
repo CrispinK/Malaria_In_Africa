@@ -1,4 +1,4 @@
-# MALARIA IN AFRICA 
+# MALARIA IN AFRICA EDA
 
 
 ```python
@@ -346,7 +346,112 @@ Malaria_data.Year = Malaria_data.Year.astype(str)
     
 
 
- 
+```python
+#Incidence of Malaria at risk
+fig1 = px.choropleth(Malaria_data,locations=Malaria_data['Country Code'],color=Malaria_data['Incidence of malaria (per 1,000 population at risk)'],color_continuous_scale='Blues',locationmode='ISO-3',scope='africa',animation_frame=Malaria_data['Year'],title="Incidence of Malaria at risk in Africa",labels={'color':'Incidence of Malaria'})
+
+fig1.show()
+```
+
+
+![mal1](https://user-images.githubusercontent.com/75635908/166159609-2a03bd80-2bc7-4698-a974-337e36b96965.png)
+
+
+
+
+```python
+#Malaria Cases Reported by country
+fig2 = px.choropleth(Malaria_data,locations=Malaria_data['Country Code'],color=Malaria_data['Malaria cases reported'],color_continuous_scale='Blues',locationmode='ISO-3',scope='africa',animation_frame=Malaria_data['Year'],title="Malaria Cases in Africa",labels={'color':'number of Malaria cases'})
+
+fig2.show()
+```
+
+
+![png](output_24_0.png)
+
+
+
+```python
+#Use of insecticide-treated bed nets
+fig3 = px.choropleth(Malaria_data,locations=Malaria_data['Country Code'],color=Malaria_data['Use of insecticide-treated bed nets (% of under-5 population)'],color_continuous_scale='Blues',locationmode='ISO-3',scope='africa',animation_frame=Malaria_data['Year'],title="Malaria in Africa: Use of Insecticide-treated Bed Nets",labels={'color':'Use of insecticide-treated bed nets'})
+
+fig3.show()
+```
+
+
+
+
+
+```python
+#Children with fever receiving antimalarial drugs (% of children under age 5 with fever)
+fig4 = px.choropleth(Malaria_data,locations=Malaria_data['Country Code'],color=Malaria_data['Children with fever receiving antimalarial drugs (% of children under age 5 with fever)'],color_continuous_scale='Blues',locationmode='ISO-3',scope='africa',animation_frame=Malaria_data['Year'],title="Malaria in Africa: Children with Fever receiving Antimalarial Drugs",labels={'color':'Children with fever receiving antimalarial drugs'})
+
+fig4.show()
+```
+
+
+
+
+var gd = document.getElementById('9f8fc860-2069-4249-ba26-2b93fb5e7011');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };                });            </script>        </div>
+
+
+
+```python
+#Intermittent preventive treatment (IPT) of malaria in pregnancy (% of pregnant women) 
+fig5 = px.choropleth(Malaria_data,locations=Malaria_data['Country Code'],color=Malaria_data['Intermittent preventive treatment (IPT) of malaria in pregnancy (% of pregnant women)'],color_continuous_scale='Blues',locationmode='ISO-3',scope='africa',animation_frame=Malaria_data['Year'],title="Malaria in Africa: Intermittent Preventive Treatment of Malaria in Pregnancy",labels={'color':'Intermittent preventive treatment (IPT) of malaria in pregnancy'})
+
+fig5.show()
+```
+
+
+
+
+var gd = document.getElementById('d068326f-24b5-469b-ad38-a99eebb93c03');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };                });            </script>        </div>
+
 
 
 ```python
@@ -1007,8 +1112,7 @@ plt.show()
 
 
     
-![output_24_0](https://user-images.githubusercontent.com/75635908/166151004-5b7f2b3d-360f-487b-a6e6-247eb7d5a2bb.png)
-
+![png](output_24_0.png)
     
 
 
@@ -1032,8 +1136,7 @@ plt.show()
 
 
     
-![output_25_0](https://user-images.githubusercontent.com/75635908/166150978-8f71aeac-bbbb-4f62-ad65-8c1d4f8195f4.png)
-
+![png](output_25_0.png)
     
 
 
@@ -1125,8 +1228,8 @@ plt.show()
 
 
     
-![output_27_0](https://user-images.githubusercontent.com/75635908/166150952-aa73702a-f24e-48cc-9fbf-f3b399a26cb0.png)
-
+![png](output_27_0.png)
+    
 
 
 
@@ -1143,7 +1246,8 @@ plt.show()
 
 
     
-![output_28_0](https://user-images.githubusercontent.com/75635908/166150934-d075b63b-f64e-4e0f-b242-6f12925c3410.png)
+![png](output_28_0.png)
+    
 
 
 
@@ -1166,7 +1270,6 @@ plt.show()
 
 
     
-
-![output_29_1](https://user-images.githubusercontent.com/75635908/166150902-fddc1117-8e83-4a6f-b39e-c5175153b766.png)
+![png](output_29_1.png)
     
 
