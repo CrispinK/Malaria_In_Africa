@@ -334,14 +334,6 @@ Malaria_data.dtypes
 #convert year to string
 Malaria_data.Year = Malaria_data.Year.astype(str)
 ```
-
-    C:\Users\crispin\AppData\Local\Temp\ipykernel_13924\98639886.py:2: SettingWithCopyWarning:
-    
-    
-    A value is trying to be set on a copy of a slice from a DataFrame.
-    Try using .loc[row_indexer,col_indexer] = value instead
-    
-    See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
     
     
 
@@ -367,8 +359,7 @@ fig2.show()
 ```
 
 
-![png](output_24_0.png)
-
+![mal2](https://user-images.githubusercontent.com/75635908/166160702-fed1746a-90db-4bc5-8938-6ec7575f67ed.png)
 
 
 ```python
@@ -379,7 +370,7 @@ fig3.show()
 ```
 
 
-![png](output_24_0.png)
+![mal3](https://user-images.githubusercontent.com/75635908/166160717-8595acf1-e48e-4e3c-ada6-9fb9028ca0e2.png)
 
 
 ```python
@@ -392,7 +383,7 @@ fig4.show()
 
 
 
-![png](output_24_0.png)
+![mal4](https://user-images.githubusercontent.com/75635908/166160740-e8c12208-cc55-48b0-9db6-c17ed76e9ac3.png)
 
 
 ```python
@@ -403,9 +394,9 @@ fig5.show()
 ```
 
 
+![mal5](https://user-images.githubusercontent.com/75635908/166160751-fb63a657-f1ca-49d9-87fe-fe072337404c.png)
 
 
-![png](output_24_0.png)
 
 
 
@@ -1067,8 +1058,8 @@ plt.show()
 
 
     
-![png](output_24_0.png)
-    
+![output_24_0](https://user-images.githubusercontent.com/75635908/166160788-fd33db8c-7ea4-4c10-a086-e05113ff4de2.png)
+
 
 
 
@@ -1091,8 +1082,8 @@ plt.show()
 
 
     
-![png](output_25_0.png)
-    
+![output_25_0](https://user-images.githubusercontent.com/75635908/166160818-91baa375-b0dd-4b8c-8968-c6fe343c112e.png)
+
 
 
 
@@ -1183,7 +1174,7 @@ plt.show()
 
 
     
-![png](output_27_0.png)
+
     
 
 
@@ -1201,8 +1192,8 @@ plt.show()
 
 
     
-![png](output_28_0.png)
-    
+![output_28_0](https://user-images.githubusercontent.com/75635908/166160858-4a5529d1-8ba9-441b-8d65-6fe76588d7b1.png)
+
 
 
 
@@ -1225,6 +1216,7 @@ plt.show()
 
 
     
-![png](output_29_1.png)
+![output_29_1](https://user-images.githubusercontent.com/75635908/166160868-ab2edbdf-8e8e-44a1-92a1-5d750e5cd4a9.png)
+
     
 
